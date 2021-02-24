@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>标签列表 | 零撸实验室</title>
+<title>微客众智（文章自阅、各类点赞任务） | 零撸实验室</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -12,13 +12,21 @@
 <link rel="stylesheet" href="https://myllsy.github.io/styles/main.css">
 
 
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 
 
-    <meta name="description" content="稳定零撸项目分享交流">
+    <meta name="description" content="
+..." />
+    <meta name="keywords" content="长久稳定" />
   </head>
   <body>
     <div id="app" class="main">
@@ -89,12 +97,44 @@
 
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
-          <h2 class="tag-list-title">标签列表</h2>
-          <div class="tags-container">
+          <div class="post-detail">
+            <h2 class="post-title">微客众智（文章自阅、各类点赞任务）</h2>
+            <div class="post-date">2021-02-24</div>
             
-              <a class="tag" href="https://myllsy.github.io/tag/ke2LlOima/">长久稳定</a>
+            <div class="post-content" v-pre>
+              <figure data-type="image" tabindex="1"><img src="https://myllsy.github.io/post-images/1614170953508.jpg" alt="" loading="lazy"></figure>
+
+            </div>
             
+              <div class="tag-container">
+                
+                  <a href="https://myllsy.github.io/tag/ke2LlOima/" class="tag">
+                    长久稳定
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://myllsy.github.io/post/qian-he-gong-zhong-hao-guan-zhu-ren-wu/">
+                  <h3 class="post-title">
+                    千禾（公众号关注任务）
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
           </div>
+
         </div>
       </div>
     </div>
@@ -114,6 +154,29 @@ var app = new Vue({
 </script>
 
 
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'cc5b7f808fec41cb9e11',
+        clientSecret: '0bb305c2845eb53ebda501c8b620f4100a05446c',
+        repo: 'myllsy.github.io',
+        owner: 'myllsy',
+        admin: ['myllsy'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
 
 
 
